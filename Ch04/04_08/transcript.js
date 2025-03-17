@@ -13,13 +13,14 @@ typeof thing;
 
 thing = [];
 typeof thing;
-typeof thing === "object" && thing.hasOwnProperty("length"); // true
+//Array olup olmadigini anlamak icin:
+typeof thing === "object" && thing.hasOwnProperty("length"); // true 
 
 thing = {};
 typeof thing === "object" && thing.hasOwnProperty("length"); // false
 
 NaN;
-typeof NaN;
+typeof NaN; //Not a Number
 Number.isNaN();
 
 typeof null;
@@ -27,9 +28,9 @@ thing === null;
 thing = null;
 thing === null;
 
-let somethingLater;
-typeof somethingLater;
-typeof nothingSilly;
+let somethingLater; // undefined doner
+typeof somethingLater; // undefined doner
+typeof nothingSilly; // undefined doner
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
